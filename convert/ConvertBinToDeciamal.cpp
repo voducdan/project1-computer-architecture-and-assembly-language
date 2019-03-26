@@ -1,9 +1,11 @@
 #include "header.h"
 string ConvertBinToDecimal(string binString) {
+
 	int length = binString.length() - 1;
-	int index = length;
+	int index = length - 1;
 	vector<double> dec;
-	for (size_t i = 0; i <= length; i++)
+	dec.push_back(-(binString[0] - 48) * Exponential(2, length));
+	for (size_t i = 1; i <= length; i++)
 	{
 		dec.push_back((binString[i] - 48)* Exponential(2, index));
 		index--;

@@ -22,4 +22,4 @@ vector<string> ConvertBinToHex(string binString);
 string VectorToString(vector<int> str);
 string ConvertHexToDec(string hexString);
 int HexElementInDec(char hexElement);
-vector<int> ConvertHexToBin(string hexString);
+string ConvertHexToBin(string hexString);
