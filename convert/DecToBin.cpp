@@ -29,6 +29,10 @@ vector<int> DecToBin(string DecimalString) {
 			bin.push_back(0);
 		}
 	}
+	if (bin.size() > 128) {
+		cout << "Out of bounds";
+		return { -1 };
+	}
 	reverse(bin.begin(), bin.end());
 	return bin;
 }
