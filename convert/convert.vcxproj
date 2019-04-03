@@ -157,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AddBin.cpp" />
+    <ClCompile Include="convert.cpp" />
     <ClCompile Include="ConvertBinToDeciamal.cpp" />
     <ClCompile Include="ConvertBinToHex.cpp" />
     <ClCompile Include="ConvertDecimalToBinary.cpp" />
@@ -166,9 +167,11 @@
     <ClCompile Include="DecToBin.cpp" />
     <ClCompile Include="Exponential.cpp" />
     <ClCompile Include="HexElementInBin.cpp" />
+    <ClCompile Include="isP.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NotBin.cpp" />
     <ClCompile Include="Numberinhex.cpp" />
+    <ClCompile Include="parse.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

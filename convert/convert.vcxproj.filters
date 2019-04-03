@@ -80,5 +80,14 @@
     <ClCompile Include="ConvertHexToBin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="isP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="convert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

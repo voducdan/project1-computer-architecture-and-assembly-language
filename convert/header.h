@@ -4,6 +4,7 @@
 #include <string>
 #include <sstream>
 #include <vector>
+#include <fstream>
 using namespace std;
 vector<int> StoreString(string x);
 vector<int> DecToBin(string DecimalString);
@@ -23,3 +24,6 @@ string VectorToString(vector<int> str);
 string ConvertHexToDec(string hexString);
 int HexElementInDec(char hexElement);
 string ConvertHexToBin(string hexString);
+int isP(string num);
+vector<string> parse(string str, string seperator);
+void convertfromfile(int p1, int p2,string input);
