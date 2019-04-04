@@ -22,13 +22,6 @@ vector<int> DecToBin(string DecimalString) {
 		if (DecimalString[pos] == '0')
 			DecimalString.erase(pos, 1);
 	}
-	if (bin.size() < 128) {
-		int size = bin.size();
-		for (size_t i = 0; i < 128 - size; i++)
-		{
-			bin.push_back(0);
-		}
-	}
 	if (bin.size() > 128) {
 		cout << "Out of bounds";
 		return { -1 };

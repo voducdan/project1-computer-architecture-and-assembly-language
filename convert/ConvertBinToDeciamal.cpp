@@ -1,6 +1,8 @@
 #include "header.h"
 string ConvertBinToDecimal(string binString) {
-
+	if (binString.length() < 128) {
+		binString.insert(1, 0, '0');
+	}
 	int length = binString.length() - 1;
 	int index = length - 1;
 	vector<double> dec;

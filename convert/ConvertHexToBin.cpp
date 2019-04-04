@@ -37,5 +37,8 @@ string ConvertHexToBin(string hexString) {
 		else if (hexString[i] == 'F')
 			binString += "1111";
 	}
+	while (binString[0] == '0') {
+		binString.erase(0, 1);
+	}
 	return binString;
 }

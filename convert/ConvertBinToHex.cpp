@@ -50,5 +50,9 @@ vector<string> ConvertBinToHex(string binString) {
 			result.push_back(NumberInHex(15));
 		tempString = "";
 	}
+	while (result[0] == "0")
+	{
+		result.erase(result.begin());
+	}
 	return result;
 }
