@@ -1,24 +1,56 @@
 #include "header.h"
-void convertfromfile(int p1, int p2, string input) {
+string convertfromfile(int p1, int p2, string input) {
 	if (p1 == 2) {
 		if (p2 == 2)
-			cout << input;
+		{
+			while (input[0] == '0')
+				input.erase(0, 1);
+			return input;
+		}
 		else if (p2 == 10)
-			cout << ConvertBinToDecimal(input);
-		else PrintStringVector(ConvertBinToHex(input));
+			return ConvertBinToDecimal(input);
+		else {
+			vector<string> result = ConvertBinToHex(input);
+			string s = "";
+			for (size_t i = 0; i < result.size(); i++)
+			{
+				s += result[i];
+			}
+			return s;
+		}
 	}
 	else if (p1 == 10) {
 		if (p2 == 10)
-			cout << input;
+		{
+			while (input[0] == '0')
+				input.erase(0, 1);
+			return input;
+		}
 		else if (p2 == 2)
-			PrintIntVector(ConvertDecimalToBinary(input));
-		else PrintStringVector(ConvertDecimalToHex(input));
+		{
+			vector<int> result = ConvertDecimalToBinary(input);
+			return VectorToString(result);
+		}
+		else
+		{
+			vector<string> result = ConvertDecimalToHex(input);
+			string s;
+			for (size_t i = 0; i < result.size(); i++)
+			{
+				s += result[i];
+			}
+			return s;
+		}
 	}
 	else {
 		if (p2 == 16)
-			cout << input;
+		{
+			while (input[0] == '0')
+				input.erase(0, 1);
+			return input;
+		}
 		else if (p2 == 2)
-			cout << ConvertHexToBin(input);
-		else cout << ConvertHexToDec(input);
+			return ConvertHexToBin(input);
+		else return ConvertHexToDec(input);
 	}
 }

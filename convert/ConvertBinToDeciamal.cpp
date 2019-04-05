@@ -1,21 +1,26 @@
 #include "header.h"
 string ConvertBinToDecimal(string binString) {
+	int len = 128 - binString.length();
 	if (binString.length() < 128) {
-		binString.insert(1, 0, '0');
+		for (size_t i = 0; i < len; i++)
+		{
+			binString.insert(0, 1, '0');
+		}
 	}
-	int length = binString.length() - 1;
-	int index = length - 1;
-	vector<double> dec;
-	dec.push_back(-(binString[0] - 48) * Exponential(2, length));
+	int length = 127;
+	int index = 126;
+	string max;
+	string firstbit = string(1,binString[0]);
+	max = findmul(firstbit, powerOfTwo(length));
+	string count = "0";
 	for (size_t i = 1; i <= length; i++)
 	{
-		dec.push_back((binString[i] - 48)* Exponential(2, index));
+		string temp = findmul(string(1,(binString[i])), powerOfTwo(index));
+		count = findsum(count, temp);
 		index--;
 	}
-	double count = 0;
-	int size = dec.size();
-	for (int i = 0; i < size; i++) {
-		count += dec[i];
-	}
-	return to_string(count);
+	if (max == "0")
+		return count;
+	else
+		return "-" + findsub(max, count);
 }

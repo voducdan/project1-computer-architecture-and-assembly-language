@@ -5,6 +5,7 @@
 #include <sstream>
 #include <vector>
 #include <fstream>
+#include <numeric>
 using namespace std;
 vector<int> StoreString(string x);
 vector<int> DecToBin(string DecimalString);
@@ -26,4 +27,9 @@ int HexElementInDec(char hexElement);
 string ConvertHexToBin(string hexString);
 int isP(string num);
 vector<string> parse(string str, string seperator);
-void convertfromfile(int p1, int p2,string input);
+string convertfromfile(int p1, int p2,string input);
+string findmul(string str1, string str2);
+string findsum(string str1, string str2);
+string findsub(string str1, string str2);
+string mul(string num1, string num2);
+string powerOfTwo(int pow);

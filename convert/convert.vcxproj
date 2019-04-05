@@ -166,9 +166,13 @@
     <ClCompile Include="ConvertHexToDec.cpp" />
     <ClCompile Include="DecToBin.cpp" />
     <ClCompile Include="Exponential.cpp" />
+    <ClCompile Include="findmul.cpp" />
+    <ClCompile Include="findsub.cpp" />
+    <ClCompile Include="findsum.cpp" />
     <ClCompile Include="HexElementInBin.cpp" />
     <ClCompile Include="isP.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mul.cpp" />
     <ClCompile Include="NotBin.cpp" />
     <ClCompile Include="Numberinhex.cpp" />
     <ClCompile Include="parse.cpp" />
@@ -178,6 +182,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="poweroftwo.cpp" />
     <ClCompile Include="PrintIntVector.cpp" />
     <ClCompile Include="PrintStringVector.cpp" />
     <ClCompile Include="StoreString.cpp" />
